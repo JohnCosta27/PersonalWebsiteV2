@@ -10,15 +10,15 @@ Styles mainly for the navigation bar to start with
 body {
   margin: 0;
   overflow-x: hidden;
-  background: rgb(172,197,226);
-  background: radial-gradient(circle, rgba(172,197,226,1) 13%, rgba(143,180,209,1) 100%);
+  background: rgb(157,183,212);
+  background: radial-gradient(circle, rgba(157,183,212,1) 13%, rgba(248,254,255,1) 100%);
+  height: 100vh;
 }
 
 header {
   background-color: #282f3b;
   width: 100%;
   height: 70px;
-  position: relative;
   padding-top: 10px;
 }
 
@@ -56,16 +56,16 @@ p {
 
 .navCenterLinks {
   height: 100%;
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 25%;
   display: flex;
   justify-content: space-between;
 }
 
 .navLinks {
   font-family: LightFont;
-  font-size: 30px;
-  padding-top: 6px;
+  font-size: 28px;
+  padding-top: 7px;
   color: #DDDDDD;
   transition: color 0.1s ease-out;
   cursor: pointer;
@@ -80,10 +80,10 @@ Styles for the Home page
 */
 
 .homeMainWrapper {
-  background-color: #282f3b;
+  background-color: #495466;
   width: 65%;
   position: absolute;
-  top: calc(50% + 40px);
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
@@ -95,4 +95,118 @@ Styles for the Home page
   font-size: 64px;
   color: #DDDDDD;
   text-align: center;
+}
+
+/*
+Styles for the about page
+*/
+
+.aboutMeTitle {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  font-family: LightFont;
+  color: #DDDDDD;
+}
+
+.aboutMainWrapper {
+  background-color: #495466;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  padding: 20px 20px 20px 20px;
+}
+
+.aboutSubtitles {
+  font-family: LightFont;
+  font-size: 36px;
+  color: #DDDDDD;
+  font-weight: bold;
+}
+
+.titleWrapper {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutText, ul{
+  font-family: LightFont;
+  font-size: 24px;
+  color: #DDDDDD;
+}
+
+.flexBox {
+  display: flex;
+  width: 100%;
+}
+
+.flexchild {
+  width: 100%;
+}
+
+.listWrapper {
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+}
+
+/*
+Tutoring styles
+*/
+
+.tutoringFlexBox {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: space-between;
+}
+
+.tutoringSubject {
+  width: 100%;
+  height: 180px;
+  background-color: #495466;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 10px;
+  font-family: LightFont;
+  font-size: 36px;
+  color: #DDDDDD;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tutoringSubjectTitle {
+  width: 75%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-family: LightFont, sans-serif;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+.tutoringButtons {
+  font-family: LightFont;
+  font-size: 48px;
+  color: #DDDDDD;
+  width: 100%;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tutoringButtons:hover {
+  background-color: #282f3b;
 }
