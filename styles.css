@@ -27,6 +27,10 @@ p {
   margin-block-end: 0em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navCenterWrapper {
   height: 60px;
   width: 95%;
@@ -209,4 +213,40 @@ Tutoring styles
 
 .tutoringButtons:hover {
   background-color: #282f3b;
+}
+
+/*
+Styles for the projects
+*/
+
+.cssgrid {
+  display: grid;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #495466;
+  font-size: 3rem;
+  color: #DDDDDD;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 200px;
+  width: 100%;
+  transition: all 200ms;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: LightFont;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
 }
