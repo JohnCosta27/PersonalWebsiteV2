@@ -244,6 +244,7 @@ Styles for the projects
   border-radius: 10px;
   cursor: pointer;
   font-family: LightFont;
+  text-align: center;
 }
 
 .card:hover {
