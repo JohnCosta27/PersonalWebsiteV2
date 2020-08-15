@@ -396,4 +396,7 @@ Styles for the mobile nav bar
   .aboutSubtitles {
     font-size: 24px;
   }
+  .cssgrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
