@@ -85,7 +85,7 @@ Styles for the Home page
 
 .homeMainWrapper {
   background-color: #495466;
-  width: 65%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,6 +97,13 @@ Styles for the Home page
 .homeName {
   font-family: LightFont;
   font-size: 64px;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+.homeDescription {
+  font-family: LightFont;
+  font-size: 36px;
   color: #DDDDDD;
   text-align: center;
 }
@@ -223,6 +230,7 @@ Styles for the projects
   display: grid;
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 20px;
   align-items: center;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -250,4 +258,140 @@ Styles for the projects
 .card:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-3px) scale(1.1);
+}
+
+/*
+Below are the mobile view styles
+*/
+
+/*
+Styles for the mobile nav bar
+*/
+
+.mobileNavLinks {
+  display: none;
+  height: 100%;
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: center;
+  justify-content: space-between;
+  font-family: LightFont;
+  font-weight: bold;
+  font-size: 48px;
+  color: #DDDDDD;
+  box-sizing:border-box;
+}
+
+.mobileNavLinksWrapper {
+  width: 100%;
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mobileNameContainer {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  text-align: center;
+  font-family: LightFont;
+  font-weight: bold;
+  font-size: 48px;
+  color: #DDDDDD;
+}
+
+#mobileNavBar {
+  width: 0%;
+  height: 100vh;
+  position: absolute;
+  transition: width 0.5s ease-in-out;
+  background-color: #282f3b;
+  opacity: 0.9;
+  text-align: center;
+  overflow-x: hidden;
+  display: none;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+
+  /*
+  Mobile styles for the nav bar
+  */
+
+  .mobileNavLinks {
+    display: flex;
+  }
+
+  .navCenterWrapper {
+    display: none;
+  }
+
+  /*About page*/
+
+  .aboutMainWrapper {
+    width: 80%;
+    margin-left: 10%;
+    box-sizing:border-box;
+  }
+
+  .flexBox {
+    flex-direction: column;
+  }
+
+  .tutoringFlexBox {
+    flex-direction: column;
+  }
+
+  .tutoringSubject {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .aboutMainWrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .tutoringButtons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navLinks {
+    display: inline-block;
+    font-size: 36px;
+  }
+
+  #mobileNavBar {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .mobileNameContainer {
+    padding-top: 5px;
+    font-size: 36px;
+  }
+  .listWrapper {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .homeMainWrapper {
+    width: 80%;
+  }
+  .homeName {
+    font-size: 48px;
+  }
+  .homeDescription {
+    font-size: 24px;
+  }
+  .aboutSubtitles {
+    font-size: 24px;
+  }
 }
