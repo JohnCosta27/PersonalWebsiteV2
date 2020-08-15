@@ -188,6 +188,7 @@ Tutoring styles
   color: #DDDDDD;
   text-align: center;
   cursor: pointer;
+  z-index: -2;
 }
 
 .tutoringSubjectTitle {
@@ -197,9 +198,10 @@ Tutoring styles
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 36px;
-  font-family: LightFont, sans-serif;
+  font-family: LightFont;
   color: #DDDDDD;
   text-align: center;
+  z-index: -1;
 }
 
 .tutoringButtons {
