@@ -263,6 +263,46 @@ Styles for the projects
 }
 
 /*
+Styles for the articles part
+*/
+
+.articleFlexBox {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleChild {
+  width: 100%;
+  background-color: #495466;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.articleChildMiddle {
+  font-family: LightFont;
+  font-size: 48px;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+.articleChild:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.dateText {
+  font-family: LightFont;
+  font-size: 30px;
+  color: #DDDDDD;
+  text-align: center;
+}
+
+/*
 Below are the mobile view styles
 */
 
